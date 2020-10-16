@@ -104,3 +104,6 @@ class Game:
         if p1.wins < p2.wins:
             return p2.name
         return "It was a tie!"
+
+game = Game()
+game.play_game()
