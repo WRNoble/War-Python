@@ -9,7 +9,7 @@ class Card:
     def __init__(self, v, s):
         """suit + value are ints"""
         self.value = v
-        self.suits = s
+        self.suit = s
 
     def __lt__(self, c2):
         if self.value < c2.value:
@@ -21,7 +21,7 @@ class Card:
                 return False
         return False
 
-    def__gt__(self, c2):
+    def __gt__(self, c2):
         if self.value > c2.value:
             return True
         if self.value == c2.value:
@@ -31,6 +31,9 @@ class Card:
                 return False
         return False
 
-    def__repr__(self):
+    def __repr__(self):
         v = self.values[self.value] + " of " + self.suits[self.suit]
         return v
+
+card = Card(3, 2)
+print(card)
